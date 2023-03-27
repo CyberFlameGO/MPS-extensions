@@ -9109,7 +9109,7 @@
                           <ref role="37wK5l" node="7PuCnELAR27" resolve="getTree" />
                         </node>
                         <node concept="liA8E" id="7PvgUNuOLtj" role="2OqNvi">
-                          <ref role="37wK5l" to="7e8u:~MPSTree.getModel()" resolve="getModel" />
+                          <ref role="37wK5l" to="7e8u:~MPSTree.getDFTreeModel()" resolve="getDFTreeModel" />
                         </node>
                       </node>
                     </node>
@@ -9556,7 +9556,7 @@
                             <ref role="37wK5l" node="7PuCnELAR27" resolve="getTree" />
                           </node>
                           <node concept="liA8E" id="2Ko4lD9_izh" role="2OqNvi">
-                            <ref role="37wK5l" to="7e8u:~MPSTree.getModel()" resolve="getModel" />
+                            <ref role="37wK5l" to="7e8u:~MPSTree.getDFTreeModel()" resolve="getDFTreeModel" />
                           </node>
                         </node>
                       </node>
