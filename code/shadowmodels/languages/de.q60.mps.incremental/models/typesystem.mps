@@ -54,6 +54,10 @@
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -3364,13 +3368,14 @@
                     <node concept="37vLTw" id="3GM_nagTsj2" role="37wK5m">
                       <ref role="3cqZAo" node="hLFMmXZ" resolve="paramTypes" />
                     </node>
-                    <node concept="1PxgMI" id="5tP$u8Dq2Bp" role="37wK5m">
-                      <property role="1BlNFB" value="true" />
-                      <node concept="chp4Y" id="5tP$u8Dq2JV" role="3oSUPX">
-                        <ref role="cht4Q" to="tpee:fz3vP1H" resolve="Type" />
-                      </node>
-                      <node concept="1Z$b5t" id="hTgUGFH" role="1m5AlR">
-                        <ref role="1Z$eMM" node="hLFOlab" resolve="RESULT" />
+                    <node concept="1eOMI4" id="2_vv4z5$Wqh" role="37wK5m">
+                      <node concept="10QFUN" id="2_vv4z5$Wqg" role="1eOMHV">
+                        <node concept="1Z$b5t" id="2_vv4z5$Wqf" role="10QFUP">
+                          <ref role="1Z$eMM" node="hLFOlab" resolve="RESULT" />
+                        </node>
+                        <node concept="3Tqbb2" id="2_vv4z5$Wqe" role="10QFUM">
+                          <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1Z$b5t" id="hVwvnFr" role="37wK5m">
