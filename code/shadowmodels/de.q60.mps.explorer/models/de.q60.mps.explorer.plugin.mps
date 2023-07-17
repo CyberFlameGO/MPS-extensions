@@ -14,6 +14,8 @@
     <import index="e55s" ref="r:340cdae2-711c-4186-bc13-94d9832e5a1d(de.q60.mps.explorer)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
+    <import index="eqyk" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.plugins.tool(MPS.Platform/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
   </imports>
   <registry>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
@@ -261,10 +263,6 @@
           </node>
         </node>
         <node concept="3clFbF" id="2CK1QGRNKzh" role="3cqZAp">
-          <node concept="15s5l7" id="5tP$u8DpP5T" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: incompatible types: {u1=&gt;y1} and {p1=&gt;void}&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c89590337(jetbrains.mps.baseLanguage.closures.typesystem)/1229718163909]&quot;;" />
-            <property role="huDt6" value="Error: incompatible types: {u1=&gt;y1} and {p1=&gt;void}" />
-          </node>
           <node concept="2OqwBi" id="2CK1QGRNKzi" role="3clFbG">
             <node concept="2WthIp" id="2CK1QGRNKzj" role="2Oq$k0" />
             <node concept="2wDMaC" id="2CK1QGRNKzk" role="2OqNvi">
@@ -297,6 +295,10 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="15s5l7" id="5tP$u8DpP5T" role="lGtFl">
+            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: incompatible types: {u1=&gt;y1} and {p1=&gt;void}&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c89590337(jetbrains.mps.baseLanguage.closures.typesystem)/1229718163909]&quot;;" />
+            <property role="huDt6" value="Error: incompatible types: {u1=&gt;y1} and {p1=&gt;void}" />
           </node>
         </node>
         <node concept="3cpWs6" id="2CK1QGRNKzw" role="3cqZAp">

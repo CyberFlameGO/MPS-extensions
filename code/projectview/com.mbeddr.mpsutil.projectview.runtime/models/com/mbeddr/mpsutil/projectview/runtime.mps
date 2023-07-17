@@ -226,6 +226,7 @@
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
       <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
@@ -251,15 +252,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
-        <property id="8575328350543493365" name="message" index="huDt6" />
-        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -7255,11 +7249,19 @@
             </node>
           </node>
         </node>
-        <node concept="1QHqEK" id="55UUbH_65Hc" role="3cqZAp">
-          <node concept="15s5l7" id="5tP$u8DpJnp" role="lGtFl">
-            <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Error: Shall specify a repository to lock&quot;;FLAVOUR_RULE_ID=&quot;[r:aad06b20-0a6a-42d7-81b8-671529c6126a(jetbrains.mps.lang.access.typesystem)/1705896275416798528]&quot;;" />
-            <property role="huDt6" value="Error: Shall specify a repository to lock" />
+        <node concept="3cpWs8" id="67xxAsaZ5IS" role="3cqZAp">
+          <node concept="3cpWsn" id="67xxAsaZ5IT" role="3cpWs9">
+            <property role="TrG5h" value="repo" />
+            <node concept="3uibUv" id="67xxAsaZ5aM" role="1tU5fm">
+              <ref role="3uigEE" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+            </node>
+            <node concept="2YIFZM" id="67xxAsaZ5IU" role="33vP2m">
+              <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
+              <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+            </node>
           </node>
+        </node>
+        <node concept="1QHqEK" id="55UUbH_65Hc" role="3cqZAp">
           <node concept="1QHqEC" id="55UUbH_65He" role="1QHqEI">
             <node concept="3clFbS" id="55UUbH_65Hg" role="1bW5cS">
               <node concept="2Gpval" id="52ZF9D3g4Gr" role="3cqZAp">
@@ -7294,9 +7296,8 @@
                   </node>
                 </node>
                 <node concept="2OqwBi" id="52ZF9D3g4gR" role="2GsD0m">
-                  <node concept="2YIFZM" id="52ZF9D3g4eU" role="2Oq$k0">
-                    <ref role="1Pybhc" to="w1kc:~MPSModuleRepository" resolve="MPSModuleRepository" />
-                    <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getInstance()" resolve="getInstance" />
+                  <node concept="37vLTw" id="67xxAsaZ5IV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="67xxAsaZ5IT" resolve="repo" />
                   </node>
                   <node concept="liA8E" id="52ZF9D3g4tz" role="2OqNvi">
                     <ref role="37wK5l" to="w1kc:~MPSModuleRepository.getModules()" resolve="getModules" />
@@ -7304,6 +7305,9 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="37vLTw" id="67xxAsaZcmZ" role="ukAjM">
+            <ref role="3cqZAo" node="67xxAsaZ5IT" resolve="repo" />
           </node>
         </node>
       </node>
